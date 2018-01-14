@@ -6,6 +6,9 @@ Author URI: http://hypercoder.co
 Version:1.0
 */
 
+
+
+
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover{
 	background-color: transparent;
 }
@@ -24,9 +27,13 @@ Version:1.0
     bottom: 10px;
     padding: 0 15px !important;
 }
-.service .gform_wrapper .gform_footer{
+.gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type=submit]{
+    width: 100% !important;
+}
+.page-sidebar-widget .gform_wrapper .gform_footer{
     width: 100% !important;
     position: inherit;
+    padding-bottom: 20px !important;
 }
 .gform_wrapper .gform_body{
 	width: 100% !important;
@@ -132,7 +139,9 @@ body .gform_wrapper ul li.gfield{
 .form-group-wrapper {
     padding: 0 15px;
 }
-
+.video-section {
+    padding-top: 25px;
+}
 /*media*/
 
 @media(max-width:991px){

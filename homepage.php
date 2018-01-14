@@ -19,7 +19,7 @@ $page_id = get_queried_object_id();
                                     <p class="heading"><?php the_field('appointment_title', '') ?></p>
                                     <p class="phone-number">Call <a href="tel:704-274-2085"><span id="loc:5939695492"><?php the_field('phone_number', 'options') ?></span></a></p>
                                     <p class="separator">or</p>
-                                    <a href="<?php the_field('button_url', '') ?>">
+                                    <a href="<?php the_field('button_url', '') ?>" class="smoothScroll">
                                         <div class="message-btn"><?php the_field('button_text', '') ?><span class="caret"></span></div>
                                     </a>
                                     <p class="description"><?php the_field('form_description', '') ?></p>
@@ -174,7 +174,10 @@ $page_id = get_queried_object_id();
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-sm-12">
+                            <div class="col-md-6 col-sm-12 video-section">
+                              <div class="embed-responsive embed-responsive-4by3">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/CrrnNVnlvc8"></iframe>
+                              </div>
                             </div>
                         </div>
                     </div>

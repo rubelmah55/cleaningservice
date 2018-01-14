@@ -231,6 +231,10 @@ function charity_images_custom_login_page() {
 		#login {
 		    padding: 7% 0 0;
 		}
+		
+		.login #nav a, .login #backtoblog a, .login label, .login .message{
+			color:#000 !important;
+		}
     </style>';
 }
 add_action('login_head', 'charity_images_custom_login_page', 99);

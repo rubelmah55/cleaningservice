@@ -42,5 +42,41 @@ $(document).ready(function(){
 
      });
 
+// navbar
+var $mainContainer = $('.main-container');
+
+  $('.navbar-toggle[data-toggle="sidebar"]').click(function(){
+    if($mainContainer.hasClass("open")) {
+      $mainContainer.removeClass("open");
+    }
+    else {
+      $mainContainer.addClass("open");
+    }
+  });
+
+  $('.protective-glass').click(function(){
+    $mainContainer.removeClass("open");
+  }); 
+
+/**
+   * Smooth scroll
+   *
+   */
+  $(function() {
+    $('.smoothScroll, a').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top - 80
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+
+// Photo Gallery
     $('.venobox').venobox();
 });  
