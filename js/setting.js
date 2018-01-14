@@ -2,7 +2,6 @@ $(document).ready(function(){
   $('.serv').slick({
     dots: false,
     infinite: false,
-    speed: 3000,
     slidesToShow: 4,
     slidesToScroll: 4,
     responsive: [
@@ -36,7 +35,6 @@ $(document).ready(function(){
      autoplay: true, 
     dots: false,
     infinite: true,
-    speed: 3000,
     slidesToShow: 1,
     adaptiveHeight: true
 
